@@ -5,17 +5,17 @@
 */
 
 // PROCEDIMENTO:
-// 1. CREARE DUE PROMPT INSERENDO DEI NUMERI IN ENTRAMBI
+// 1. CREARE DUE PROMPT INSERENDO DEI NUMERI IN ENTRAMBI I CASI
 // 2. LAVORARE SUGLI "IF, ELSE IF" DICHIARANDO CHE IL SOFTWARE STAMPA IL NUMERO PIU' ALTO
 
 
-let firstNum = prompt ('Inserisci un numero');
-let secondNum = prompt ('Inserisci un altro numero');
+const firstNum = prompt ('Inserisci un numero');
+const secondNum = prompt ('Inserisci un altro numero');
 
 console.log(firstNum, secondNum);
 
-let firstView = document.querySelector('#first-number').innerHTML = `${firstNum}`;
-let secondView = document.querySelector('#second-number').innerHTML = `${secondNum}`;
+const firstView = document.querySelector('#first-number').innerHTML = `${firstNum}`;
+const secondView = document.querySelector('#second-number').innerHTML = `${secondNum}`;
 
 console.log(firstView, secondView);
 
@@ -31,4 +31,5 @@ else if(firstNum < secondNum){
 else {
   document.querySelector('.winning-number').innerHTML = `The Winner is Nodoby`;
 }
+
 
