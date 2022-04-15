@@ -12,24 +12,10 @@
 // 3. FARE IN MODO CHE VIENE STAMAPATA LA PAROLE PIU' CORTA E POI QUELLA LUNGA
 
 let firstWord = prompt ('Inserisci una parola');
+const firstWordOutput = (`La nostra stringa ha ${firstWord.length} lettere`);
 let secondWord = prompt ('Inserisci un altra parola');
+const secondWordOutput = (`La nostra stringa ha ${secondWord.length} lettere`);
 
-console.log(firstNum, secondNum);
-
-let firstView = document.querySelector('#first-word').innerHTML = `${firstNum}`;
-let secondView = document.querySelector('#second-word').innerHTML = `${secondNum}`;
-
-console.log(firstView, secondView);
+console.log(firstWordOutput, secondWordOutput);
 
 
-if (firstNum > secondNum) {
-  document.querySelector('.winning-word').innerHTML = `The Winner is ${firstNum}`;
-}
-
-else if(firstNum < secondNum){
-  document.querySelector('.winning-word').innerHTML = `The Winner is ${secondNum}`;
-}
-
-else {
-  document.querySelector('.winning-word').innerHTML = `The Winner is Nodoby`;
-}

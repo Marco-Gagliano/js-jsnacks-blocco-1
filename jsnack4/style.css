@@ -1,0 +1,30 @@
+header {
+  background-image: url(https://cvparties.com/wp-content/uploads/Great-Gatsby_0.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 973px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h1, header h3 {
+  color: #FFFFFF;
+}
+
+.checked {
+  background-color: #00FF22;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.denied {
+  background-color: #FF0000;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.button-login {
+  padding: 5px 15px;
+  background-color: #000000;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
