@@ -12,7 +12,7 @@
 // 3. LAVORARE SU "IF" E "ELSE IF" PER CREARE LE CONDIZIONI
 // 4. STAMPARE SU HTML
 
-alert ("Benvenuto alla festa a tema 'Il Grande Gatsby'. Prego, inserisca le seu generalità per verificare se è nella lista")
+alert ("Benvenuto alla festa a tema 'Il Grande Gatsby'. Prego, inserisca le sue generalità per verificare se è nella lista")
 
 const listParty = [
 'Mihai Badia',
@@ -38,9 +38,9 @@ const listParty = [
 'Amanjit Singh',
 'Sebastiano Visco'
 ];
-const listChecked = document.getElementById('checklist')
-const listPartyChecked = document.getElementById('list-checked')
-const listPartyDenied = document.getElementById('list-denied')
+const listChecked = document.getElementById('checklist');
+const listPartyChecked = document.getElementById('list-checked');
+const listPartyDenied = document.getElementById('list-denied');
 
 
 listChecked.addEventListener('click' , function(){
@@ -49,23 +49,23 @@ const userList = document.getElementById ('written-list').value;
 let register = false;
 
 for (let i = 0; i < listParty.length; i++){
-  if(listParty[i] === userList)
+  if(listParty[i] === userList);
   register = true
 }
 
 if(register) {
-  listPartyChecked.innerHTML = "Sei sulla lista. Benevuto alla festa a tema 'Il Grande Batsy'. Buon Divertimento!"
-  listPartyChecked.classList.add('checked')
-  listPartyDenied.classList.remove('denied')
-  listPartyDenied.innerHTML = ' '
+  listPartyChecked.innerHTML = "Sei sulla lista. Benevuto alla festa a tema 'Il Grande Batsy'. Buon Divertimento!";
+  listPartyChecked.classList.add('checked');
+  listPartyDenied.classList.remove('denied');
+  listPartyDenied.innerHTML = ' ';
   }
   
 
 else {
-  listPartyDenied.innerHTML = "Purtroppo non sei sulla lista. La prossima volta prenotati. Sarà per la prossima volta. Ti Aspettiamo"
-  listPartyDenied.classList.add('denied')
-  listPartyChecked.classList.remove('checked')
-  listPartyChecked.innerHTML = ' '
+  listPartyDenied.innerHTML = "Purtroppo non sei sulla lista. La prossima volta prenotati. Sarà per la prossima volta. Ti Aspettiamo";
+  listPartyDenied.classList.add('denied');
+  listPartyChecked.classList.remove('checked');
+  listPartyChecked.innerHTML = ' ';
   }
 })
 
