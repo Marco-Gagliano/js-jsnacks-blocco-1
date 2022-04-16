@@ -17,7 +17,7 @@ const numbersArray = [];
 
 console.log('I numeri dispari sono', numbersArray);
 
-const numbersRequest = 7;
+const numbersRequest = 6;
 let i = 1;
 let numbersRequired;
 
@@ -27,8 +27,8 @@ do {
   console.log('Il numero inserito è', numbersRequired);
 
   if(numbersRequired % 2) {
-    document.getElementById('odd-numbers').innerHTML = `I numeri dispari sono:${numbersArray}`
     numbersArray.push(numbersRequired);
+    document.getElementById('odd-numbers').innerHTML = `I numeri dispari sono:${numbersArray}`
   } i++;
 } 
 
