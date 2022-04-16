@@ -28,7 +28,6 @@ const secondWrittenWord = document.querySelector('.second-word');
 if (firstWord > secondWord) {
   document.querySelector('.winner-word').innerHTML = `La parola più corta è "${secondWord}" perchè contiene ${secondWord.length} lettere`;
   document.querySelector('.loser-word').innerHTML = `La parola più lunga è "${firstWord}" perchè contiene ${secondWord.length} lettere`;
-  
 }
 
 else if(firstWord < secondWord) {
