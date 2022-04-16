@@ -1,0 +1,18 @@
+main {
+  background-image: url(https://img5.goodfon.com/wallpaper/nbig/1/c2/matrix-green-numbers.jpg);
+  background-size: cover;
+  height: 973px;
+}
+
+main h3, main h1 {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.winning-number {
+  color: #00FF22;
+}
+
+.draw-number {
+  color: #FFA600;
+}
